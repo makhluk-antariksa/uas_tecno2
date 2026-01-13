@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - TrashFlow Jogja</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Tailwind Config untuk Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nature-green': '#10b981',
+                        'nature-green-dark': '#059669',
+                        'slate-professional': '#475569',
+                        'zinc-professional': '#52525b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- Navbar dengan Glassmorphism -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-recycle text-2xl text-nature-green"></i>
+                        <span class="text-xl font-bold text-slate-professional">TrashFlow Jogja</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html#home" class="text-slate-professional hover:text-nature-green transition-colors">Beranda</a>
+                    <a href="index.html#features" class="text-slate-professional hover:text-nature-green transition-colors">Fitur</a>
+                    <a href="monitor.html" class="text-slate-professional hover:text-nature-green transition-colors">Live Monitoring</a>
+                    <a href="about.html" class="text-nature-green font-semibold">Tentang</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-professional">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html#home" class="block text-slate-professional hover:text-nature-green transition-colors">Beranda</a>
+                <a href="index.html#features" class="block text-slate-professional hover:text-nature-green transition-colors">Fitur</a>
+                <a href="monitor.html" class="block text-slate-professional hover:text-nature-green transition-colors">Live Monitoring</a>
+                <a href="about.html" class="block text-nature-green font-semibold">Tentang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-green-50 via-white to-slate-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-professional mb-6">
+                    Tentang <span class="text-nature-green">TrashFlow Jogja</span>
+                </h1>
+                <p class="text-xl text-zinc-professional leading-relaxed">
+                    Platform SaaS B2B/B2G yang mengoptimalkan logistik dan distribusi sampah antar Bank Sampah di wilayah Yogyakarta
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main About Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto space-y-12">
+                
+                <!-- Overview -->
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-slate-professional mb-4">Tentang Platform</h2>
+                    <div class="space-y-4 text-zinc-professional leading-relaxed">
+                        <p class="text-lg">
+                            <strong class="text-slate-professional">TrashFlow Jogja</strong> adalah platform SaaS (Software as a Service) B2B/B2G yang fokus pada optimasi logistik dan distribusi sampah antar Bank Sampah di wilayah Yogyakarta. Platform ini dirancang untuk mendukung program Jogja Zero Waste dengan mencegah penumpukan sampah di satu titik.
+                        </p>
+                        <p>
+                            Tujuan utama platform ini adalah mencegah penumpukan (overload) sampah di satu titik dengan mendistribusikannya ke titik lain yang masih memiliki kapasitas kosong. Dengan sistem monitoring real-time dan algoritma redistribusi cerdas, TrashFlow Jogja membantu menjaga stabilitas pengelolaan sampah di seluruh wilayah Yogyakarta.
+                        </p>
+                        <p>
+                            Platform ini mencakup 14 kecamatan di Kota Yogyakarta dan terintegrasi dengan lebih dari 100 Bank Sampah yang tersebar di seluruh wilayah. Dengan teknologi monitoring 24/7, kami memastikan bahwa setiap Bank Sampah dapat beroperasi secara optimal tanpa mengalami kelebihan kapasitas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visi & Misi -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl shadow-lg border border-green-100">
+                        <div class="w-16 h-16 bg-nature-green rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-eye text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-professional mb-4">Visi</h3>
+                        <p class="text-zinc-professional leading-relaxed">
+                            Menjadi platform terdepan dalam optimasi logistik sampah di Indonesia, mendukung terwujudnya kota zero waste yang berkelanjutan dan ramah lingkungan.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl shadow-lg border border-green-100">
+                        <div class="w-16 h-16 bg-nature-green rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-bullseye text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-professional mb-4">Misi</h3>
+                        <ul class="text-zinc-professional leading-relaxed space-y-2">
+                            <li><i class="fas fa-check-circle text-nature-green mr-2"></i>Mengoptimalkan distribusi sampah antar Bank Sampah</li>
+                            <li><i class="fas fa-check-circle text-nature-green mr-2"></i>Mencegah penumpukan sampah dengan teknologi cerdas</li>
+                            <li><i class="fas fa-check-circle text-nature-green mr-2"></i>Mendukung program Jogja Zero Waste</li>
+                            <li><i class="fas fa-check-circle text-nature-green mr-2"></i>Meningkatkan efisiensi pengelolaan sampah</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Manfaat Platform -->
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-slate-professional mb-4">Manfaat Platform</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-nature-green">
+                            <h4 class="text-xl font-semibold text-slate-professional mb-3">
+                                <i class="fas fa-chart-line text-nature-green mr-2"></i>
+                                Monitoring Real-time
+                            </h4>
+                            <p class="text-zinc-professional">
+                                Pantau kapasitas semua Bank Sampah secara real-time dengan indikator visual yang jelas, memungkinkan pengambilan keputusan yang cepat dan tepat.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-nature-green">
+                            <h4 class="text-xl font-semibold text-slate-professional mb-3">
+                                <i class="fas fa-exchange-alt text-nature-green mr-2"></i>
+                                Redistribusi Cerdas
+                            </h4>
+                            <p class="text-zinc-professional">
+                                Sistem otomatis yang mendeteksi overload dan menyarankan redistribusi ke Bank Sampah terdekat dengan kapasitas kosong, mengurangi risiko penumpukan.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-nature-green">
+                            <h4 class="text-xl font-semibold text-slate-professional mb-3">
+                                <i class="fas fa-database text-nature-green mr-2"></i>
+                                Integrasi Data DLH
+                            </h4>
+                            <p class="text-zinc-professional">
+                                Terintegrasi langsung dengan sistem data Dinas Lingkungan Hidup (DLH) Kota Yogyakarta untuk akurasi informasi yang terpercaya.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-nature-green">
+                            <h4 class="text-xl font-semibold text-slate-professional mb-3">
+                                <i class="fas fa-leaf text-nature-green mr-2"></i>
+                                Dukungan Zero Waste
+                            </h4>
+                            <p class="text-zinc-professional">
+                                Mendukung program Jogja Zero Waste dengan memastikan pengelolaan sampah yang efisien dan berkelanjutan di seluruh wilayah.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrasi DLH -->
+                <div class="bg-green-50 border-l-4 border-nature-green p-8 rounded-r-lg">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-check-circle text-4xl text-nature-green"></i>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-2xl font-bold text-slate-professional mb-3">
+                                Integrasi Data Dinas Lingkungan Hidup (DLH) Kota Yogyakarta
+                            </h3>
+                            <p class="text-zinc-professional leading-relaxed mb-4">
+                                Platform ini terintegrasi langsung dengan sistem data DLH untuk memastikan akurasi informasi kapasitas dan status Bank Sampah secara real-time. Integrasi ini memungkinkan:
+                            </p>
+                            <ul class="space-y-2 text-zinc-professional">
+                                <li><i class="fas fa-check text-nature-green mr-2"></i>Sinkronisasi data kapasitas Bank Sampah secara otomatis</li>
+                                <li><i class="fas fa-check text-nature-green mr-2"></i>Akurasi informasi yang terpercaya dan terbaru</li>
+                                <li><i class="fas fa-check text-nature-green mr-2"></i>Koordinasi yang lebih baik antara platform dan instansi pemerintah</li>
+                                <li><i class="fas fa-check text-nature-green mr-2"></i>Pelaporan data yang komprehensif untuk pengambilan kebijakan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teknologi -->
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-slate-professional mb-4">Teknologi yang Digunakan</h2>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center p-6 bg-gradient-to-br from-green-50 to-white rounded-lg shadow-md">
+                            <i class="fas fa-cloud text-4xl text-nature-green mb-4"></i>
+                            <h4 class="text-lg font-semibold text-slate-professional mb-2">Cloud-Based SaaS</h4>
+                            <p class="text-sm text-zinc-professional">
+                                Platform berbasis cloud untuk aksesibilitas dan skalabilitas yang optimal
+                            </p>
+                        </div>
+                        
+                        <div class="text-center p-6 bg-gradient-to-br from-green-50 to-white rounded-lg shadow-md">
+                            <i class="fas fa-sync-alt text-4xl text-nature-green mb-4"></i>
+                            <h4 class="text-lg font-semibold text-slate-professional mb-2">Real-time Sync</h4>
+                            <p class="text-sm text-zinc-professional">
+                                Sinkronisasi data real-time untuk monitoring yang akurat dan up-to-date
+                            </p>
+                        </div>
+                        
+                        <div class="text-center p-6 bg-gradient-to-br from-green-50 to-white rounded-lg shadow-md">
+                            <i class="fas fa-brain text-4xl text-nature-green mb-4"></i>
+                            <h4 class="text-lg font-semibold text-slate-professional mb-2">Smart Algorithm</h4>
+                            <p class="text-sm text-zinc-professional">
+                                Algoritma cerdas untuk redistribusi optimal berdasarkan kapasitas dan jarak
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cakupan Wilayah -->
+                <div class="bg-gradient-to-br from-slate-50 to-green-50 p-8 rounded-xl">
+                    <h2 class="text-3xl font-bold text-slate-professional mb-6">Cakupan Wilayah</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-professional mb-4">
+                                <i class="fas fa-map-marked-alt text-nature-green mr-2"></i>
+                                14 Kecamatan di Kota Yogyakarta
+                            </h3>
+                            <div class="grid grid-cols-2 gap-2 text-sm text-zinc-professional">
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Umbulharjo</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Gondokusuman</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Jetis</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Mergangsan</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Danurejan</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Gedongtengen</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Ngampilan</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Wirobrajan</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Mantrijeron</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Kraton</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Pakualaman</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Tegalrejo</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Kotagede</div>
+                                <div><i class="fas fa-circle text-nature-green text-xs mr-2"></i>Gondomanan</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-professional mb-4">
+                                <i class="fas fa-building text-nature-green mr-2"></i>
+                                Lebih dari 100 Bank Sampah
+                            </h3>
+                            <p class="text-zinc-professional leading-relaxed mb-4">
+                                Platform ini terhubung dengan lebih dari 100 Bank Sampah yang tersebar di seluruh 14 kecamatan Kota Yogyakarta. Setiap Bank Sampah dapat memantau kapasitasnya secara real-time dan menerima notifikasi ketika memerlukan redistribusi.
+                            </p>
+                            <div class="flex items-center space-x-4 text-sm">
+                                <div class="bg-white px-4 py-2 rounded-lg shadow">
+                                    <div class="text-2xl font-bold text-nature-green">100+</div>
+                                    <div class="text-zinc-professional">Bank Sampah</div>
+                                </div>
+                                <div class="bg-white px-4 py-2 rounded-lg shadow">
+                                    <div class="text-2xl font-bold text-nature-green">14</div>
+                                    <div class="text-zinc-professional">Kecamatan</div>
+                                </div>
+                                <div class="bg-white px-4 py-2 rounded-lg shadow">
+                                    <div class="text-2xl font-bold text-nature-green">24/7</div>
+                                    <div class="text-zinc-professional">Monitoring</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-professional text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-recycle text-2xl text-nature-green"></i>
+                        <span class="text-xl font-bold">TrashFlow Jogja</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Platform SaaS untuk optimasi logistik sampah di Yogyakarta.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html#home" class="hover:text-nature-green transition-colors">Beranda</a></li>
+                        <li><a href="index.html#features" class="hover:text-nature-green transition-colors">Fitur</a></li>
+                        <li><a href="monitor.html" class="hover:text-nature-green transition-colors">Live Monitoring</a></li>
+                        <li><a href="about.html" class="hover:text-nature-green transition-colors">Tentang</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-map-marker-alt mr-2 text-nature-green"></i>Kota Yogyakarta</li>
+                        <li><i class="fas fa-envelope mr-2 text-nature-green"></i>info@trashflowjogja.id</li>
+                        <li><i class="fas fa-phone mr-2 text-nature-green"></i>+62 XXX XXX XXX</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 TrashFlow Jogja. Mendukung Program Jogja Zero Waste.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
