@@ -1,0 +1,97 @@
+/* Custom Styles untuk TrashFlow Jogja */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #10b981;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #059669;
+}
+
+/* Animasi untuk tabel rows */
+.monitor-row {
+    transition: all 0.3s ease;
+}
+
+.monitor-row:hover {
+    background-color: #f0fdf4 !important;
+    transform: scale(1.01);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi untuk progress bar */
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+/* Loading Animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    animation: spin 1s linear infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Pulse Animation untuk Status Indicator */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.status-live {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .monitor-row:hover {
+        transform: none;
+    }
+}
+
+/* Glassmorphism Enhancement */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
